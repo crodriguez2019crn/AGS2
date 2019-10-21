@@ -1,8 +1,13 @@
 
+/* porfavor no mires el codigo*/
+
+
+
 body {
 
   margin: 40px;
   overflow: hidden;
+   transform: rotate(-90deg);
 }
 
 div {
@@ -11,7 +16,6 @@ display: block;
 height: 100px;
 width: 800px;
 margin: auto;
-
 
 
 
@@ -25,8 +29,8 @@ margin: auto;
   margin: auto;
   background: green;
   position: absolute;
-  top: 20px;
-  right: 540px;
+  top: -20px;
+  right: 500px;
   z-index: -1;
 
 }
@@ -113,10 +117,11 @@ margin: auto;
 width: 40px;
 height: 40px;
 padding: 30px;
+overflow: hidden;
 
 }
 .d {
-  color: gray;
+  color: white;
 margin-top: 40px;
   text-align: center;
 }
