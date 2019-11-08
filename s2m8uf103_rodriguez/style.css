@@ -1,7 +1,33 @@
-body{
-  background:black;
-}
+@import url('https://fonts.googleapis.com/css?family=Eater&display=swap');
 
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  filter: brightness(0.6);
+  cursor: url(https://media.giphy.com/media/inNTw05ozJuTK/giphy.gif), auto;
+
+}
+.fondo{
+  margin:0;
+  padding: 0;
+}
+.fondo img{
+position: absolute;
+margin-top: -20px;
+width: 100%;
+height:170%;
+opacity: 0.3;
+
+}
+.fuego img{
+position:absolute;
+margin-top: -20px;
+width: 100%;
+height:170%;
+opacity: 0.1;
+
+}
 
 .text{
 
@@ -9,7 +35,6 @@ width: 800px;
 margin: auto;
 font-size: 25px;
 color: white;
-background: black;
 line-height: 32px;
 text-align: justify;
 
@@ -19,7 +44,7 @@ img {
 
 width: 200px;
 opacity: 0.6;
-
+-webkit-user-drag: none;
 }
 .d {
 float: right;
@@ -43,11 +68,11 @@ margin-right: 20px;
 
 
 p {
-
+  font-size: 1rem;
   animation: glow 1s infinite;
 }
 @keyframes glow {
-  0%,100% {text-shadow: 0 0 2px red;}
+  0%,100% {text-shadow: 0 0 10px red;}
   50% {text-shadow: 0 0 0px red;}
 
 }
@@ -57,12 +82,20 @@ p {
 .c1 {
 
   width: 390px;
-  background: gray;
   float: left;
 }
 
 .c2 {
   width: 390px;
   float: right;
-  background: rgb(148, 148, 148);
+}
+
+h1, p{
+
+
+  font-family: 'Eater', cursive;
+}
+h1{
+
+  font-size: 2rem;
 }
