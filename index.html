@@ -5,45 +5,59 @@
   <meta charset="utf-8">
   <title>Indice</title>
   <style media="screen">
+    @media only screen and (max-width: 800px) {
+
+      body {
+        background-color: #ba83ca;
+      }
+
+    }
+
+    @media only screen and (min-width: 800px) {
+
+      .fondo {
+        background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #87a7ed, #72b4f5, #5ec0f9, #38d1fd, #14e0f9, #30efee, #5ffbdd);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+        animation: fondo 30s infinite linear;
+
+      }
+
+      @keyframes fondo {
+
+        0%,
+        100% {
+          transform: skewX(0deg);
+          opacity: 1;
+          transform: scale(4);
+        }
+
+        25% {
+          transform: skewX(10deg);
+          opacity: .8;
+          transform: scale(2);
+        }
+
+        75% {
+          transform: skewX(-10deg);
+          opacity: .8;
+          transform: scale(2);
+        }
+
+      }
+
+    }
+
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    .fondo {
-      background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #87a7ed, #72b4f5, #5ec0f9, #38d1fd, #14e0f9, #30efee, #5ffbdd);
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
 
-      animation: fondo 30s infinite linear;
-
-    }
-
-    @keyframes fondo {
-
-      0%,
-      100% {
-        transform: skewX(0deg);
-        opacity: 1;
-        transform: scale(4);
-      }
-
-      25% {
-        transform: skewX(10deg);
-        opacity: .8;
-        transform: scale(2);
-      }
-
-      75% {
-        transform: skewX(-10deg);
-        opacity: .8;
-        transform: scale(2);
-      }
-
-    }
 
     .cuadrado {
       transition: 0.2s;
@@ -75,30 +89,46 @@
 <body>
   <div class="fondo">
   </div>
-  <a href="s2m8uf100_rodriguez/index.html"><div class="cuadrado">
-    calendari
-  </div></a>
-  <a href="s2m8uf101_rodriguez/index.html"><div class="cuadrado">
-    feedly
-  </div></a>
-  <a href="s2m8uf102_rodriguez/index.html"><div class="cuadrado">
-    regions
-  </div></a>
-  <a href="s2m8uf103_rodriguez/index.html"><div class="cuadrado">
-    float
-  </div></a>
-  <a href="s2m8uf105_rodriguez/index.html"><div class="cuadrado">
-    escacs
-  </div></a>
-  <a href="s2m8uf106_rodriguez/index.html"><div class="cuadrado">
-    positions
-  </div></a>
-  <a href="s2m8uf107_rodriguez/index.html"><div class="cuadrado">
-    responsive
-  </div></a>
-  <a href=""><div class="cuadrado">
-    -
-  </div></a>
+  <a href="s2m8uf100_rodriguez/index.html">
+    <div class="cuadrado">
+      calendari
+    </div>
+  </a>
+  <a href="s2m8uf101_rodriguez/index.html">
+    <div class="cuadrado">
+      feedly
+    </div>
+  </a>
+  <a href="s2m8uf102_rodriguez/index.html">
+    <div class="cuadrado">
+      regions
+    </div>
+  </a>
+  <a href="s2m8uf103_rodriguez/index.html">
+    <div class="cuadrado">
+      float
+    </div>
+  </a>
+  <a href="s2m8uf105_rodriguez/index.html">
+    <div class="cuadrado">
+      escacs
+    </div>
+  </a>
+  <a href="s2m8uf106_rodriguez/index.html">
+    <div class="cuadrado">
+      positions
+    </div>
+  </a>
+  <a href="s2m8uf107_rodriguez/index.html">
+    <div class="cuadrado">
+      responsive
+    </div>
+  </a>
+  <a href="">
+    <div class="cuadrado">
+      -
+    </div>
+  </a>
 </body>
 
 </html>
