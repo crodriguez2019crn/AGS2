@@ -1,12 +1,12 @@
 /* Movil*/
-@media screen and (max-width:360px) and (orientation:portrait) {
+@media screen and (min-width:360px) and (orientation:portrait) {
   body {
     background-image: linear-gradient(90deg, green, lime);
   }
 }
 
 /* Movil*/
-@media screen and (max-width:360px) and (orientation:landscape){
+@media screen and (min-width:360px) and (orientation:landscape){
   body {
     background-image: linear-gradient(90deg, cyan, BLUE);
   }
