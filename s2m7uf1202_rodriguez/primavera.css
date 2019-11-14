@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+}
+
+#barra {
+  height: 50px;
+  opacity: 1;
+  background: rgba(255,0,255,0.3);
+  font-size: 30px;
+  color: white;
+  font-family: helvetica;
+  width: 70%;
+  position: relative;
+  z-index:  4;
+}
+
+
+
+#cartel {
+  transition: 0.4s;
+  margin-top: -50px;
+  height: 50px;
+  width: 70%;
+  margin-bottom: 30px;
+  padding: 0;
+}
+ #barra:hover~#cartel,#cartel:hover{
+  transition: 0.4s;
+  margin-top: -50px;
+  height: 800px;
+  width: 70%;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+
+
+
+
+
+#right {
+  float: right;
+  font-size: 15px;
+  padding: 12px;
+}
+
+#righto {
+  /*en realidad esta es la izquierda y la de abajo la derecha */
+  float: left;
+  font-size: 28px;
+  width: 70%;
+  font-weight: bold;
+  text-align: left;
+  margin-top: -40px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+#lefto {
+  float: left;
+  width: 69%;
+  font-size: 18px;
+  column-count: 0;
+  margin-left: 20px;
+}
+
+#desc {
+  padding: 20px 0;
+  margin-bottom: 150px;
+}
+
+#menu {
+  background-color: white;
+  width: 400px;
+  text-align: left;
+  position: fixed;
+  right: 0;
+  right: 60px;
+}
+
+#menu li {
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+  display: inline-block;
+}
+
+#lateral {
+
+  float: right;
+  width: 30%;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 90%;
+  position: fixed;
+  right: 0;
+  top: 85px;
+}
+
+#lateral li {
+  background: white;
+  margin: 5.4px 0;
+  text-align: center;
+  font-weight: bold;
+  color: pink;
+  padding: 20px 0;
+  border-bottom: dashed 2px black;
+}
+
+a:visited, a:link, a:active {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+#volver{
+  height: 40px;
+  width:40px;
+  position: fixed;
+  margin: 0;
+  left:25px;
+  bottom:20px;
+  background: black;
+  padding: 10px;
+  z-index: 29081;
+  style="color:white;
+  border-collapse: separate;
+  border-radius: 30123123px;
+  opacity:0.5;
+
+
+}
+#volver a{
+  position: fixed;
+bottom: 20px;
+left: 40px;
+font-size: 50px;
+opacity:1;
+}
+#volver:hover {
+  transition: opacity 0.3s;
+  opacity: 1;
+}

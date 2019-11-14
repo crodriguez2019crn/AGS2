@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="primavera.xsl"?>
+<root>
+  <row>
+    <id>a03</id>
+    <Artista>Belle &amp; Sebastian</Artista>
+    <Dia>viernes 29 de mayo</Dia>
+    <Lloc>Parc del Fòrum</Lloc>
+    <image><src>img/belle.jpg</src></image>
+    <Titol>La institución del indie escocés pierde la vergüenza</Titol>
+    <Descripcio>Tímidos crónicos del pop escocés y creadores exquisitos convertidos en respetada institución del indie, Belle &amp; Sebastian llevan casi una década jugando a sacudirse la vergüenza de encima con discos que, sin abandonar el espíritu de “If You’re Feeling Sinister” y “The Boy With The Arab Strap”, les han abierto las puertas de nuevos horizontes musicales plasmados en trabajos como el jovial “The Life Pursuit” o el melancólico y soleado “Write About Love”. Ahora, cinco años después de su último trabajo y con Stuart Murdoch estrenándose como director de cine con “God Help The Girl”, los de Glasgow regresan con “Girls in Peacetime Want to Dance”, un trabajo que combina el primoroso pop de cámara de siempre con excursiones a la pista de baile como “The Party Line”.</Descripcio>
+    <Disc>“Girls in Peacetime Want to Dance” (Matador, 2015)</Disc>
+    <Web>http://www.belleandsebastian.com</Web>
+  </row>
+  <row>
+    <id>a11</id>
+    <Artista>The New Pornographers</Artista>
+    <Dia>viernes 29 de mayo</Dia>
+    <Lloc>Parc del Fòrum</Lloc>
+    <image><src>img/The_New_Pornographers.jpg</src></image>
+    <Titol>Superpop a la candiense</Titol>
+    <Descripcio>Centrados durante los últimos años en sus carreras en solitario, A.C. Newman, Dan Bejar, Neko Case y compañía reactivan esa precisa y engrasada maquinaria de pop resplandeciente que es The New Pornographers para presentar “Bill Bruisers”, su primer trabajo en cuatro años. Consolidados como supergrupo indie por excelencia, los canadienses retoman así la senda de trabajos como “Mass Romantic”, “Twin Cinema” y “Challengers” con un nuevo disco que es un canto de amor al pop torrencial y colorista; una vitalista postal de power-pop hecho a mano y cargado de deliciosas armonías vocales con el que el combo de Vancouver sigue echando mano de su devoción por Big Star, The Zombies y The Beach Boys y dando rienda suelta a su pasión por las melodías clásicas y los arreglos euforizantes.</Descripcio>
+    <Disc>“Bill Bruisers” (Matador, 2014)</Disc>
+    <Web>http://www.thenewpornographers.com</Web>
+  </row>
+</root>
