@@ -23,7 +23,7 @@
           </ul>
 
 
-        <xsl:for-each select="root/row[1]">
+        <xsl:for-each select="root/row[3]">
           <div id="barra"> <span id="{id}.xml">
 
             <xsl:value-of select="Titol"/></span>

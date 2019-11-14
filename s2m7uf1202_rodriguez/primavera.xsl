@@ -29,7 +29,7 @@
 
 
         <xsl:for-each select="root/row">
-          <a href="1.xml">
+          <a href="{id}.xml">
           <xsl:choose>
             <xsl:when test="Dia='miércoles 27 de mayo'">
           <div id="barra" style="background-color:rgba(255,0,0,0.3)"> <span id="{id}">
