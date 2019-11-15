@@ -30,9 +30,9 @@ body {
 }
 
 .logo {
-  margin: 200px auto;
+  margin: 10% auto;
   background: white;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 999px;
 }
