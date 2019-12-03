@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Helvetica, Sans-serif;
+}
+
+.barra {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 300;
+}
+
+.barra h2 {
+  font-size: 1rem;
+  margin-left: 100px;
+  margin-top: -32px;
+  font-weight: normal;
+}
+
+.barra h3 {
+  font-size: 1rem;
+  margin-right: 5%;
+  margin-top: -18px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.barra img {
+  padding: 10px;
+}
+
+a {
+  color: #CCC;
+  text-decoration: none;
+}
+
+a:active {
+  color: #CCC;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.titol {
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.cartel {
+  display: inline-block;
+}
+
+.imagen {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 260px;
+  width: 175px;
+  border-radius: 5px;
+  margin: 20px 0;
+  margin-left: 20px;
+}
+
+.imagen:hover {
+  opacity: 0.5;
+}
+
+.info {
+  text-indent: 20px;
+  margin-top: -20px;
+  color: #ccc;
+}
+
+.info h2 {
+  font-size: 0.85rem;
+}
+
+.info h3 {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.info h4 {
+  text-align: right;
+  font-size: 11px;
+  margin-top: -13px;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.titol2 {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 1.375rem;
+}
+
+@media (max-width: 600px) {
+  body{
+    margin-left: -20px;
+
+  }
+  .barra, .titol, .titol2{
+    margin-left: 20px;
+}
+  .titol, .titol2{
+    margin-left: 40px;
+    margin-bottom: -20px;
+  }
+  .cartel {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 43.5%;
+    border-radius: 0.625rem;
+    margin: 20px 0;
+    margin-left: 3%;
+  }
+
+  /* Al estar dentro del div, no es el
+  porcentaje de la pagina si no del div en
+  el que esta. No se como aplicar al porcentaje
+  total de la pagina
+  .imagen {
+    width: 43.5%;}*/
+
+  .imagen {
+    height: 310px;
+    width: 210px;
+    border-radius: 0.85rem;
+  }
+  .info h4 {
+    visibility: hidden;
+  }
+
+  .barra h2 {
+    font-size: 0.9rem;
+    margin-left: 100px;
+    margin-top: -32px;
+    font-weight: normal;
+  }
+
+  .barra h3 {
+    font-size: 0.9rem;
+    margin-right: 5%;
+    margin-top: -16px;
+    font-weight: normal;
+    text-align: right;
+  }
+}
