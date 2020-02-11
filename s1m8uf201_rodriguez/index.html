@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+body{
+background-image: url(https://services.meteored.com/img/article/pinturas-rupestres-en-clave-climatica-189121-2_768.jpg);
+background-size: cover;
+text-align: center;
+font-family: helvetica;
+font
+
+}
+
+p,h2{
+  color:black;
+  border: black 2px;
+  font-size: 20px;
+}
+
+h1{
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border: turquoise solid 5px;
+  font-size: 60px;
+  line-height: 100px;
+  color:turquoise;
+  background: linear-gradient(135deg, navy, blue);
+  border-radius: 5px;
+
+
+}
+
+img{
+  height:180px;
+  width: 180px;
+
+}
+li{
+  list-style:none;
+  margin:5px;
+  display: inline-block;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+background-position: 0px 0, 5px 5px;
+background-size: 10px 10px, 10px 10px;
+
+}
+
+.desenf img{
+  -webkit-filter: blur(0px);
+}
+
+.sepia img{
+  -webkit-filter: sepia(0%);
+}
+
+.llum img{
+  -webkit-filter: brightness(0%);
+}
+
+
+.contrast img{
+  -webkit-filter: contrast(0%);
+}
+
+.to img{
+  -webkit-filter: hue-rotate(0deg);
+}
+
+.invert img{
+  -webkit-filter: invert(0%);
+}
+
+.gris img{
+  -webkit-filter: grayscale(0%);
+}
+
+.ombra img{
+  -webkit-filter: drop-shadow(0px 0px);
+}
+
+
+.opac img{
+  -webkit-filter: opacity(0%);
+}
+
+.saturar img{
+  -webkit-filter: saturate(0%);
+}
+
+
+
+
+  </style>
+  <body>
+<h1>Ps</h1>
+<ul>
+  <li class="efe desenf"><img id="uno" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="desenf" value="0" max="10">
+  <p>DESENFOCAR</p>
+  </li>
+  <li class="efe sepia"><img id="dos" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="sepia" value="0" max="100">
+  <p>SEPIA</p>
+  </li>
+  <li class="efe llum"><img id="tres" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="lluminositat" value="0" max="1000">
+  <p>LLUMINOSITAT</p>
+  </li>
+  <li class="efe contrast"><img id="cuat" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="contrast" value="0" max="1000">
+  <p>CONTRAST</p>
+  </li>
+  <li class="efe to"><img id="cinc" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="to" value="0" max="500">
+  <p>TO</p>
+  </li><br>
+  <li class="efe invert"><img id="sis" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="invertir" value="0">
+  <p>INVERTIR</p>
+  </li>
+  <li class="efe gris"><img id="set" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="gris" value="0">
+  <p>GRIS</p>
+  </li>
+  <li class="efe ombra"><img id="ocho" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="ombra" value="0" max="20">
+  <p>OMBRA</p>
+  </li>
+  <li class="efe opac"><img id="nou" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="opacitat" value="0">
+  <p>OPACITAT</p>
+  </li>
+  <li class="efe saturar"><img id="deu" src="fruta.gif" alt="">
+  <h2></h2>
+  <input type=range id="saturar" value="0" max="300">
+  <p>SATURAR</p>
+  </li>
+</ul>
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("desenf").addEventListener("input",fdesenf)
+
+  function fdesenf(){
+    document.getElementById("uno").style.filter="blur("+desenf.value+"px)";
+  }
+
+
+  document.getElementById("sepia").addEventListener("input",sepiaf)
+
+  function sepiaf(){
+    document.getElementById("dos").style.filter="sepia("+sepia.value+"%)";
+  }
+
+
+
+  document.getElementById("lluminositat").addEventListener("input",lluminositatf)
+
+  function lluminositatf(){
+    document.getElementById("tres").style.filter="brightness("+lluminositat.value+"%)";
+  }
+
+
+
+  document.getElementById("contrast").addEventListener("input",contrastf)
+
+  function contrastf(){
+    document.getElementById("cuat").style.filter="contrast("+contrast.value+"%)";
+  }
+
+
+
+  document.getElementById("to").addEventListener("input",tof)
+
+  function tof(){
+    document.getElementById("cinc").style.filter="hue-rotate("+to.value+"deg)";
+  }
+
+
+
+  document.getElementById("invertir").addEventListener("input",invertirf)
+
+  function invertirf(){
+    document.getElementById("sis").style.filter="invert("+invertir.value+"%)";
+  }
+
+
+
+  document.getElementById("gris").addEventListener("input",grisf)
+
+  function grisf(){
+    document.getElementById("set").style.filter="grayscale("+gris.value+"%)";
+  }
+
+
+
+  document.getElementById("ombra").addEventListener("input",ombraf)
+
+  function ombraf(){
+    document.getElementById("ocho").style.filter="drop-shadow("+ombra.value+"px "+ombra.value+"px)";
+  }
+
+
+
+  document.getElementById("opacitat").addEventListener("input",opacitatf)
+
+  function opacitatf(){
+    document.getElementById("nou").style.filter="opacity("+opacitat.value+"%)";
+  }
+
+
+
+  document.getElementById("saturar").addEventListener("input",saturarf)
+
+  function saturarf(){
+    document.getElementById("deu").style.filter="saturate("+saturar.value+"%)";
+  }
+
+
+  </script>
+</html>
