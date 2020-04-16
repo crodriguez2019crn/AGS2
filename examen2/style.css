@@ -1,0 +1,16 @@
+
+/*
+Theme Name:   Examen
+Description:  Examen examen examen
+Author:       Carlos
+Version:      1.0
+License:      la meva
+Tags:         cotxes, examen, jordi
+*/
+
+@import "960_12_col.css";
+
+body {
+  background: rgb(255,192,203);
+  background: linear-gradient(36deg, rgba(255,192,203,1) 25%, rgba(255,255,240,1) 25%, rgba(255,255,240,1) 100%);
+}
