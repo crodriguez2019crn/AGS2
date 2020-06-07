@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+/*
+index.html
+css/*
+audio/*
+img/*
+Localisation/*
+temari.html
+ciutadania.html
+deures.html
+horari.html
+matematiques.html
+educacio-fisica.html
+naturals.html
+opcions.html
+musica.html
+principal.html
+main.js
+missatges.html
