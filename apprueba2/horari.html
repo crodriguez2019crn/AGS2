@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintesi</title>
+<html lang="es" manifest="cache.manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f26f6f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="512x512" href="appicon.png">
+    <link rel="icon" sizes="192x192" href="appicon.png">
+    <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="hamburguesa" onclick="menu(menuses)">
+           <img src="img/hamburguesa.png" alt="Menú">
+        </div>
+        <div class="menu" id="menuses" onclick="menu(menuses)">
+            <div class="menu-materies">
+                <div class="">
+                    <a class="assignatura" id="naturals-temari" onclick="normal.play()" href="javascript:setTimeout(()=>{window.location = 'principal.html' },500);">
+                        Inici
+                    </a>
+                    <a class="assignatura" id="matematiques-temari" onclick="normal.play()" href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                        Temari
+                    </a>
+                    <a class="assignatura" id="musica-temari" onclick="normal.play()" href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                        Missatges
+                    </a>
+                    <a class="assignatura" id="ciutadania-temari" onclick="normal.play()" href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                        Deures
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="principal.html">
+            <img src="img/enrere.png" alt="" id="enrere">
+        </a>
+        <a class="carpeta" id="apartat-assignatura" href="temari.html">
+            <img src="img/horari.png" alt="temari.png">
+        </a>
+        <div class="materies">
+
+            <div class="requadre-titol requadre-matematiques-titol" onclick="amagar(horariDilluns)">
+                Dilluns
+            </div>
+            <div id="dilluns" onclick="amagar(horariDilluns)">
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">8:00</p>
+                    <p class="requadre-dre">Matemàtiques</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">10:00</p>
+                    <p class="requadre-dre">Naturals</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">12:00</p>
+                    <p class="requadre-dre">Tallers</p>
+                </div>
+            </div>
+            <div class="requadre-titol requadre-matematiques-titol" onclick="amagar(horariDimarts)">
+                Dimarts
+            </div>
+            <div id="dimarts">
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">9:00</p>
+                    <p class="requadre-dre">Ciutadania</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">10:00</p>
+                    <p class="requadre-dre">Educació física</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">12:00</p>
+                    <p class="requadre-dre">Tallers</p>
+                </div>
+            </div>
+            <div class="requadre-titol requadre-matematiques-titol" onclick="amagar(horariDimecres)">
+                Dimecres
+            </div>
+            <div id="dimecres">
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">9:00</p>
+                    <p class="requadre-dre">Matemàtiques</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">10:00</p>
+                    <p class="requadre-dre">Música</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">12:00</p>
+                    <p class="requadre-dre">Tallers</p>
+                </div>
+            </div>
+            <div class="requadre-titol requadre-matematiques-titol" onclick="amagar(horariDijous)">
+                Dijous
+            </div>
+            <div id="dijous">
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">9:00</p>
+                    <p class="requadre-dre">Ciutadania</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">10:00</p>
+                    <p class="requadre-dre">Naturals</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">12:00</p>
+                    <p class="requadre-dre">Tallers</p>
+                </div>
+            </div>
+            <div class="requadre-titol requadre-matematiques-titol" onclick="amagar(horariDivendres)">
+                Divendres
+            </div>
+            <div id="divendres">
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">9:00</p>
+                    <p class="requadre-dre">Matemàtiques</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">10:00</p>
+                    <p class="requadre-dre">Educació Física</p>
+                </div>
+                <div class="requadre">
+                    <p class="requadre-esq requadre-matematiques">12:00</p>
+                    <p class="requadre-dre">Tallers</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>

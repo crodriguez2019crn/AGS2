@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="@Url.Content(" ~/manifest.json")" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintesi</title>
+    <html lang="es" manifest="cache.manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f26f6f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="512x512" href="appicon.png">
+    <link rel="icon" sizes="192x192" href="appicon.png">
+    <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="hamburguesa" onclick="menu(menuses)">
+            <img src="img/hamburguesa.png" alt="Menú">
+        </div>
+        <div class="menu" id="menuses" onclick="menu(menuses)">
+            <div class="menu-materies">
+                <div class="">
+                    <a class="assignatura" id="naturals-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'principal.html' },500);">
+                        Inici
+                    </a>
+                    <a class="assignatura" id="matematiques-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                        Temari
+                    </a>
+                    <a class="assignatura" id="musica-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                        Missatges
+                    </a>
+                    <a class="assignatura" id="ciutadania-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                        Deures
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="temari.html">
+            <img src="img/enrere.png" alt="" id="enrere">
+        </a>
+        <a class="carpeta" id="apartat-assignatura" href="temari.html">
+            <img src="img/edfis.png" alt="edfis.png">
+        </a>
+        <div class="materies">
+            <div class="">
+                <div class="requadre-titol requadre-edfis-titol" onclick="amagar(nouMusica)">
+                    Nous temes
+                </div>
+                <div id="contingut-nou-musica">
+                    <a class="requadre"
+                        href="vid/edfis/ioga-educacio-fisica-a-casa-relaxacio-coronavirus-didactica-yoga-pedro-i-pol.mp4">
+                        <p class="requadre-esq requadre-edfis">1-4</p>
+                        <p class="requadre-dre">Classe 4 Ioga</p>
+                    </a>
+                    <a class="requadre" href="vid/edfis/educacio-fisica-a-casa-primaria-ball-i-reptes.mp4">
+                        <p class="requadre-esq requadre-edfis">1-3</p>
+                        <p class="requadre-dre">Classe 3 Ball i reptes</p>
+                    </a>
+                    <a class="requadre"
+                        href="vid/edfis/segona-classe-deducacio-fisica-per-lalumnat-deducacio-infantil.mp4">
+                        <p class="requadre-esq requadre-edfis">1-2</p>
+                        <p class="requadre-dre">Classe 2</p>
+                    </a>
+                    <a class="requadre"
+                        href="vid/edfis/activitats-deducacio-fisica-pels-nens-i-nenes-deducacio-infantil-a-casa.mp4">
+                        <p class="requadre-esq requadre-edfis">1-1</p>
+                        <p class="requadre-dre">Classe 1</p>
+                    </a>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>

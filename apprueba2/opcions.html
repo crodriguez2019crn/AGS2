@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="@Url.Content(" ~/manifest.json")" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintesi</title>
+<html lang="es" manifest="cache.manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f26f6f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="512x512" href="appicon.png">
+    <link rel="icon" sizes="192x192" href="appicon.png">
+    <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="hamburguesa" onclick="menu(menuses)">
+           <img src="img/hamburguesa.png" alt="Menú">
+        </div>
+        <div class="menu" id="menuses" onclick="menu(menuses)">
+            <div class="menu-materies">
+                <div class="">
+                    <a class="assignatura" id="naturals-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'principal.html' },500);">
+                        Inici
+                    </a>
+                    <a class="assignatura" id="matematiques-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                        Temari
+                    </a>
+                    <a class="assignatura" id="musica-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                        Missatges
+                    </a>
+                    <a class="assignatura" id="ciutadania-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                        Deures
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="principal.html">
+            <img src="img/enrere.png" alt="" id="enrere">
+        </a>
+        <a class="carpeta" id="apartat-assignatura" href="temari.html">
+            <img src="img/opcions.png" alt="matematiques.png">
+        </a>
+        <div class="materies">
+            <div class="">
+
+                <div id="contingut-nou-musica">
+                    <a class="requadre">
+                        <p class="requadre-esq">Notificacions</p>
+                        <p class="requadre-dre">SI </p>&emsp;
+                        <label class="radio">
+                            <input type="radio" checked name="notificacions" value="notificacions-si">
+                        </label>&emsp;
+                        <p class="requadre-dre">NO</p>&emsp;
+                        <label class="radio">
+                            <input type="radio" name="notificacions-no" value="notificacions-no">
+                        </label>
+                    </a>
+                    <br>
+                    <a class="requadre">
+                        <p class="requadre-esq">So</p>
+                        <p class="requadre-dre">SI</p>&emsp;
+                        <label class="radio">
+                            <input type="radio" checked name="efectes-so" value="so-si">
+                        </label>&emsp;
+                        <p class="requadre-dre">NO</p>&emsp;
+                        <label class="radio">
+                            <input type="radio" name="efectes-so-no" value="so-no">
+                        </label>
+                    </a>
+                    <br>
+                    <a class="requadre">
+                        <p class="requadre-esq">Contrast</p>
+                        <p class="requadre-dre">SI</p>&emsp;
+                        <label class="radio">
+                            <input type="radio" name="alt-contrast" value="contrast-si">
+                        </label>&emsp;
+                        <p class="requadre-dre">NO</p>&emsp;
+                        <label class="radio">
+                            <input type="radio" checked name="alt-contrast" value="contrast-no">
+                        </label>
+                    </a><br>
+                    <input class="requadre guardar" type="submit" value="Guardar">
+                        
+                    </input>
+                    <br>
+                    <a class="requadre tancar" href="index.html">
+                        <p class="">Tancar sessió</p>
+                    </a>
+                </div>
+
+            </div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>
