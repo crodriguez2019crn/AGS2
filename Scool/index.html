@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+<link rel="manifest" href="@Url.Content("~/manifest.json")" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scool</title>
+<html lang="es" manifest="cache.manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f26f6f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="512x512" href="appicon.png">
+    <link rel="icon" sizes="192x192" href="appicon.png">
+    <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input class="rectangulo login" id="screen-name" placeholder="Nom d'usuari">
+
+            </input>
+            <br>
+            <input class="rectangulo password" placeholder="Contrasenya" type="password">
+
+            </input>
+            <br>
+            <label class="password">
+                <label class="container">Recorda'm
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="forward">
+                    <a class="fas fa-arrow-right" id="pase" href="principal.html" type="button"></a>
+                </div>
+            </label>
+
+        </div>
+        <div style="display:flex; justify-content:center; width: 100%;">
+            <img src="img/logotipo-scool-final-borde-blanco.png"
+                style="transform: scale(0.5);position: absolute; margin:0 auto;" alt=""></div>
+    </main>
+
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>

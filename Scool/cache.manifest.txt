@@ -1,0 +1,23 @@
+CACHE MANIFEST
+
+/*
+index.html
+css/*
+img/*
+Localisation/*
+temari.html
+ciutadania.html
+deures.html
+horari.html
+matematiques.html
+educacio-fisica.html
+naturals.html
+opcions.html
+musica.html
+principal.html
+main.js
+missatges.html
+normal.mp3
+guardar.mp3
+desplego.mp3
+completed.mp3

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+<link rel="manifest" href="@Url.Content("~/manifest.json")" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scool</title>
+<html lang="es" manifest="cache.manifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f26f6f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="512x512" href="appicon.png">
+    <link rel="icon" sizes="192x192" href="appicon.png">
+    <link rel="apple-touch-icon" href="appicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="hamburguesa" onclick="menu(menuses)">
+           <img src="img/hamburguesa.png" alt="Menú">
+        </div>
+        <div class="menu" id="menuses" onclick="menu(menuses)">
+            <div class="menu-materies">
+                <div class="">
+                    <a class="assignatura" id="naturals-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'principal.html' },500);">
+                        Inici
+                    </a>
+                    <a class="assignatura" id="matematiques-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                        Temari
+                    </a>
+                    <a class="assignatura" id="musica-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                        Missatges
+                    </a>
+                    <a class="assignatura" id="ciutadania-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                        Deures
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="missatgePrimer" onclick="menu(missatgePrimer)">
+            <div class="menu-materies">
+                <div class="">
+                    <p class="dia-missatge">3-7</p><br>
+                    <p class="message">Benvinguts! Volíem aclarir els dubtes de la setmana passada. Com bé ja sabeu, el
+                        confinament s'allarga dues setmanes més. Tot es per la precaució de la població així que no hi
+                        podem fer res. Respecte els dubtes, encara no podem preveure quan es tornarà a l'escola, em sap
+                        greu. Passeu bona setmana!</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="missatgeSegon" onclick="menu(missatgeSegon)">
+            <div class="menu-materies">
+                <div class="">
+                    <p class="dia-missatge">1-7</p><br>
+                    <p class="message">Bon dia! Disfruteu de la vostre setmana, ahir vaig penjar nous exercicis per
+                        poder fer amb la familia. Recomano que els feu amb l'ajut d'un adult ja que hi ha nou temari. Em
+                        sap greu no poder impartir classes com es fa normalment pero de moment amb aquesta aplicació
+                        anem bé. </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="missatgeTercer" onclick="menu(missatgeTercer)">
+            <div class="menu-materies">
+                <div class="">
+                    <p class="dia-missatge">19-6</p><br>
+                    <p class="message">Bon dia! Aquests son els deures per fer amb els vostres pares a casa. Aquest cop
+                        aprofitant l'ús d'aquest nova app hem pogut enviar-vos millors activitats per poder passar el
+                        confinament de manera entretinguda. Esperem que això acabi d'aquí poc. Molts petons a tothom.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="missatgeQuart" onclick="menu(missatgeQuart)">
+            <div class="menu-materies">
+                <div class="">
+                    <p class="dia-missatge">18-6</p><br>
+                    <p class="message">Això és un missatge de prova.</p>
+                </div>
+            </div>
+        </div>
+        <a href="principal.html">
+            <img src="img/enrere.png" alt="" id="enrere">
+        </a>
+        <a class="carpeta" id="apartat-assignatura" href="temari.html">
+            <img src="img/missatges.png" alt="temari.png">
+        </a>
+        <div class="">
+            <div class="requadre-titol requadre-missatges-titol" onclick="amagar(nouMusica)">
+                Nous missatges
+            </div>
+            <div id="contingut-nou-musica">
+                <a class="requadre" onclick="menu(missatgePrimer)">
+                    <p class="requadre-esq requadre-missatges">3-7</p>
+                    <p class="requadre-dre">Benvinguts! Volíem aclarir els dubtes de la s...</p>
+                </a>
+                <a class="requadre" onclick="menu(missatgeSegon)">
+                    <p class="requadre-esq requadre-missatges">1-7</p>
+                    <p class="requadre-dre">Bon dia! Disfruteu de la vostre setmana, ahi...</p>
+                </a>
+            </div>
+
+            <div class="requadre-titol vell" onclick="amagar(vellMusica)">
+                Missatges antics
+
+            </div>
+            <div class="contingut-vell" id="contingut-vell-musica">
+                <a class="requadre" onclick="menu(missatgeTercer)">
+                    <p class="requadre-esq-vell">19-6-2020</p>
+                    <p class="requadre-dre">Bon dia! Aquests son els deures per fer amb...</p>
+                </a>
+                <a class="requadre" onclick="menu(missatgeQuart)">
+                    <p class="requadre-esq-vell">18-6-2020</p>
+                    <p class="requadre-dre">Això és un missatge de prova.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>
