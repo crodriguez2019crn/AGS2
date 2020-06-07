@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     margin: 0;
     display: flex;
     font-size: 1em;
@@ -587,6 +586,7 @@ a:visited {
     align-items: center;
     border-radius: 10px;
     padding: 30px;
+    margin:0 auto;
 }
 
 .dia-missatge {
