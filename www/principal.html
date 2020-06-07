@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/693a52bf97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div id="mostrar">
+            <div id="pantalla"></div>
+            <div id="humo"></div>
+            <div class="ajudaMissatge" id="ajudaTemari">
+                <p class="message" id="missatgePrincipal">Hola! Ara t'ensenyarem els apartats que tenim en la pestanya
+                    principal.
+                    Clica per continuar.
+                </p>
+            </div>
+        </div>
+
+        <div class="hamburguesa" onclick="menu(menuses)">
+            <img src="hamburguesa.png" alt="Menú">
+        </div>
+        <div class="menu" id="menuses" onclick="menu(menuses)">
+            <div class="menu-materies">
+                <div class="">
+                    <a class="assignatura" id="naturals-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'principal.html' },500);">
+                        Inici
+                    </a>
+                    <a class="assignatura" id="matematiques-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                        Temari
+                    </a>
+                    <a class="assignatura" id="musica-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                        Missatges
+                    </a>
+                    <a class="assignatura" id="ciutadania-temari" onclick="normal.play()"
+                        href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                        Deures
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <div class="nom">
+                <p id="name">Benvingut, Carlos Rodriguez Fernandez.</p>
+                <div class="forward right" style="overflow: hidden;">
+                    <img src="img/usuari-icona.png" alt="Usuari icona">
+                </div>
+            </div>
+        </div>
+        <div class="carpetillass">
+            <a class="carpetilla dreta-temari" id="temari" onclick="normal.play()"
+            href="javascript:setTimeout(()=>{window.location = 'temari.html' },500);">
+                <span>Temari</span>
+            </a>
+            <a class="carpetilla" id="horari" onclick="normal.play()"
+            href="javascript:setTimeout(()=>{window.location = 'horari.html' },500);">
+                <span>Horari</span>
+            </a>
+            <br>
+
+        </div>
+        <div class="carpetillass">
+            <a class="carpetilla dreta-temari" id="missatges" onclick="normal.play()"
+            href="javascript:setTimeout(()=>{window.location = 'missatges.html' },500);">
+                <span>Missatges</span>
+            </a>
+            <a class="carpetilla" id="opcions" onclick="normal.play()"
+            href="javascript:setTimeout(()=>{window.location = 'opcions.html' },500);">
+                <span>Opcions</span>
+            </a>
+            <br>
+
+        </div>
+        <div class="carpetillass">
+            <a class="carpetilla dreta-temari" id="deures" onclick="normal.play()"
+            href="javascript:setTimeout(()=>{window.location = 'deures.html' },500);">
+                <span>Deures</span>
+            </a>
+            <a class="carpetilla" id="ajuda" onclick="ajudaPrimera()" href="#">
+                <span>Ajuda</span>
+            </a>
+            <br>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</html>
